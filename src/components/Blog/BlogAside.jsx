@@ -9,14 +9,13 @@ import './index.css';
 import moment from 'moment';
 
 const categories = [
-    "Professional Development",
-    "Global Health Perspectives",
-    "Professional Development",
-    "Mental Health Awareness",
-    "Pediatric Care",
-    "Women's Health",
-    "Nutrition and Dietetics",
-    "Medical Education and Training"
+    "Santé bucco-dentaire générale",
+    "Soins dentaires spécifiques",
+    "Hygiène bucco-dentaire",
+    "Soins des caries",
+    "Détartrage et blanchiment",
+    "Chirurgie orale et maxillo-faciale",
+    "Dentisterie esthétique"
 ]
 
 const BlogAside = ({ setSearchTerm }) => {
