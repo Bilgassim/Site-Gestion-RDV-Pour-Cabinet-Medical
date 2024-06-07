@@ -1,5 +1,5 @@
 import React from 'react';
-    import image1 from 'C:/Users/HP EliteBook x360/Desktop/Site-Gestion-RDV-Pour-Cabinet-Medical/src/images/specialities/teath.png';
+import image1 from '../../../images/specialities/teath.png';
 import * as fa from "react-icons/fa";
 import './index.css';
 

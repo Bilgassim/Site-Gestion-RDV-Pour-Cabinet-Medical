@@ -1,7 +1,7 @@
 import React from 'react';
 import './NosDocteurs.css';
-import HalimaImage from 'C:/Users/HP EliteBook x360/Desktop/Site-Gestion-RDV-Pour-Cabinet-Medical/src/images/img/Halima.jpg';
-import JamalImage from 'C:/Users/HP EliteBook x360/Desktop/Site-Gestion-RDV-Pour-Cabinet-Medical/src/images/img/Jamal.jpg'; 
+import HalimaImage from '../../../images/img/Halima.jpg';
+import JamalImage from '../../../images/img/Jamal.jpg'; 
 
 function NosDocteurs() {
   const doctorsData = [
