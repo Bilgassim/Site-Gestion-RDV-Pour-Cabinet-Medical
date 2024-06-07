@@ -1,10 +1,13 @@
 <?php
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\API\InscriptionController;
+    use Illuminate\Http\Request;
+    use Illuminate\Support\Facades\Route;
+    use App\Http\Controllers\DataController;
 
-Route::middleware('api')->group(function () {
-    Route::post('/register', [InscriptionController::class, 'register']);
-    // ...autres routes d'API
-});
+    Route::middleware('auth:api')->get('/user', function (Request $request) {
+        return $request->user();
+    });
+
+    Route::get('/data', [DataController::class, 'index']);
+    Route::post('/data', [DataController::class, 'store']);
+

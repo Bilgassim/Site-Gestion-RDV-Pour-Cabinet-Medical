@@ -56,7 +56,7 @@ const BlogAside = ({ setSearchTerm }) => {
         <div className='p-3' style={{ background: '#f8f9fa' }}>
 
             <div className="mb-4">
-                <h5 className="blog-title">SEARCH</h5>
+                <h5 className="blog-title">Rechercher</h5>
                 <Search placeholder="Search" onChange={(e) => setSearchTerm(e.target.value)} style={{ width: "100%" }} />
             </div>
 
@@ -72,7 +72,7 @@ const BlogAside = ({ setSearchTerm }) => {
             </div>
 
             <div className="mb-4">
-                <h5 className="blog-title">RECEN POSTS</h5>
+                <h5 className="blog-title">Publications récentes</h5>
                 {content}
             </div>
 

@@ -10,7 +10,7 @@ const Blog = () => {
     const blogData = data?.blogs;
     let content = null;
 
-    if (isLoading) content = <div>Loading...</div>
+    if (isLoading) content = <div>Chargement...</div>
     if (!isLoading && isError) content = <div>{message.error('something went Wrong!')}</div>
     if (!isLoading && !isError && blogData?.length === 0) content = <Empty />
     if (!isLoading && !isError && blogData?.length > 0) content =
@@ -46,7 +46,7 @@ const Blog = () => {
                                 </div>
                                 <div className="mt-1 mb-3 text-start">
                                     <Link to={`blog/${item?.id}`}>
-                                        <button className="btn btn-link border-0 text-primary">Read More</button>
+                                        <button className="btn btn-link border-0 text-primary">Voir plus</button>
                                     </Link>
                                 </div>
                             </div>
@@ -59,14 +59,14 @@ const Blog = () => {
     return (
         <div className="container" style={{ marginTop: "8.5rem", marginBottom: '7rem' }}>
             <div className='mb-5 section-title text-center'>
-                <h2>OUR BLOG</h2>
-                <p className='m-0'>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <h2>NOTRE BLOG</h2>
+                <p className='m-0'>Découvrez notre blog santé : conseils d'experts, informations utiles et actualités pour une vie plus saine et équilibrée.</p>
             </div>
             <div className="container">
                 <div className="row py-5 align-items-center justify-content-center rounded" style={{ background: '#f8f9fa' }}>
                     {content}
                     <div className='text-center mt-5'>
-                        <Link to={'/blog'} className='more-btn'>See More</Link>
+                        <Link to={'/blog'} className='more-btn'>Voir plus</Link>
                     </div>
                 </div>
             </div>

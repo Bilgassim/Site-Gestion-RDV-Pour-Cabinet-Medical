@@ -42,13 +42,11 @@ function App() {
         <Route path='/reset-password/:userId/:uniqueString' element={<ForgotPassword />} />
         <Route path='/appointment' element={<AppointmentPage />} />
         <Route path='/track-appointment' element={<TrackAppointment />} />
-        <Route path='/booking/:doctorId' element={<DoctorBooking />} />
         <Route path='/booking/success/:id' element={<BookingSuccess />} />
         <Route path='/booking/invoice/:id' element={<BookingInvoice />} />
         {/* Admin Dashboard  */}
         <Route path='/admin/dashboard' element={<AdminDashboard />} />
         <Route path='/admin/appointments' element={<AdminAppointments />} />
-        <Route path='/admin/doctors' element={<Doctors />} />
         <Route path='/admin/patients' element={<Patients />} />
         <Route path='/admin/profile' element={<Profile />} />
         <Route path='/admin/reviews' element={<AdminReviews />} />

@@ -63,7 +63,7 @@ const Blog = () => {
                                 </div>
                                 <div className="mt-1 mb-3 text-start">
                                     <Link to={`/blog/${item?.id}`}>
-                                        <button className="btn btn-link border-0" style={{ color: '#1977cc' }}>Read More</button>
+                                        <button className="btn btn-link border-0" style={{ color: '#1977cc' }}>Voir plus</button>
                                     </Link>
                                 </div>
                             </div>
