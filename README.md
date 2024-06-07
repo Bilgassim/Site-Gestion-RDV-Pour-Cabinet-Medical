@@ -4,11 +4,11 @@ Absolument ! Voici un exemple de fichier README que vous pouvez adapter pour vot
 
 # **Titre du projet :** Système de prise de rendez-vous pour cabinet médical
 
-# **Description :**
+ **Description :**
 
 Ce projet vise à faciliter la gestion des rendez-vous pour les cabinets médicaux. Il offre une interface utilisateur intuitive (développée avec React) et un backend robuste (Laravel) pour gérer les données des patients, les disponibilités des médecins, et les réservations.
 
-# **Fonctionnalités actuelles :**
+ **Fonctionnalités actuelles :**
 
 * **Interface utilisateur React :**
     * Calendrier interactif pour visualiser les disponibilités.
@@ -18,7 +18,7 @@ Ce projet vise à faciliter la gestion des rendez-vous pour les cabinets médica
     * API REST pour la communication avec le frontend.
     * Modèles de données pour les patients, médecins, rendez-vous.
 
-# **Captures d'écran (facultatif) :**
+# **Captures d'écran :**
 
 [Insérez ici des captures d'écran de votre interface utilisateur]
 
