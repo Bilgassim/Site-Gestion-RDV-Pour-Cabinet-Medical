@@ -30,7 +30,7 @@ Ce projet vise à faciliter la gestion des rendez-vous pour les cabinets médica
 
 # **Installation et configuration :**
 
-1. **Cloner le dépôt :** `git clone https://github.com/votre-nom-utilisateur/nom-du-depot.git`
+1. **Cloner le dépôt :** `git clone [https://github.com/votre-nom-utilisateur/nom-du-depot.git](https://github.com/Bilgassim/Site-Gestion-RDV-Pour-Cabinet-Medical.git)`
 2. **Installer les dépendances frontend :** `cd frontend && npm install`
 3. **Installer les dépendances backend :** `cd backend && composer install`
 4. **Configurer la base de données :** (Expliquer comment configurer le fichier `.env` de Laravel)
