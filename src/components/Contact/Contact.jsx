@@ -9,12 +9,13 @@ import { useContactMutation } from '../../redux/api/contactApi';
 import { message } from 'antd';
 
 const Contact = () => {
+    
     const [contact, {isLoading, isError, error, isSuccess}]= useContactMutation();
     const { register, handleSubmit, reset } = useForm({});
     const onSubmit = (data) => {
         contact(data);
         reset();
-    };
+      };      
     
     useEffect(() => {
         if(isSuccess){
@@ -27,7 +28,7 @@ const Contact = () => {
     return (
         <>
             <Header />
-            <SubHeader title="Contact us" subtitle="Lorem ipsum dolor sit amet consectetur adipisicing." />
+            <SubHeader title="Contactez-nous" subtitle="Besoin d'un rendez-vous ou d'un renseignement ?" />
             <section id="contact" className="contact mt-5 mb-5">
                 <div className="container" style={{ marginTop: 80, marginBottom: 120 }}>
                     <div className="row">
@@ -66,14 +67,14 @@ const Contact = () => {
                                 <form className="row form-row" onSubmit={handleSubmit(onSubmit)}>
                                     <div className="col-md-6">
                                         <div className="form-group mb-2 card-label">
-                                            <label>First Name</label>
+                                            <label>Nom</label>
                                             <input required {...register("firstName")} className="form-control" placeholder='First Name'/>
                                         </div>
                                     </div>
 
                                     <div className="col-md-6">
                                         <div className="form-group mb-2 card-label">
-                                            <label>Last Name</label>
+                                            <label>Prénom</label>
                                             <input required {...register("lastName")} className="form-control" placeholder='Last Name'/>
                                         </div>
                                     </div>
@@ -87,7 +88,7 @@ const Contact = () => {
 
                                     <div className="col-md-12">
                                         <div className="form-group mb-2 card-label">
-                                            <label>Subject</label>
+                                            <label>Objet</label>
                                             <input required {...register("subject")} className="form-control" placeholder="Enter your subject"/>
                                         </div>
                                     </div>
@@ -100,7 +101,7 @@ const Contact = () => {
                                     </div>
 
                                     <div className="text-center mt-3 mb-5">
-                                        <button disabled={isLoading} type='submit' className="appointment-btn">Send Message</button>
+                                    <button disabled={isLoading || isSuccess} type='submit' className="appointment-btn">Envoyer le message</button>
                                     </div>
                                 </form>
                             </div>

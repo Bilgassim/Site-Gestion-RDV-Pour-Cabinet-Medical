@@ -3,6 +3,11 @@ import SubHeader from '../Shared/SubHeader'
 import Footer from '../Shared/Footer/Footer'
 import Header from '../Shared/Header/Header'
 import img from '../../images/features/baby.png'
+import img1 from '../../images/features/orthodontie.png'
+import img2 from '../../images/features/endodontie.jpg'
+import img3 from '../../images/features/parodontie.jpg'
+import img4 from '../../images/features/chirurgieOrale.jpg'
+import img5 from '../../images/features/dentistherie.jpg'
 import { Link } from 'react-router-dom'
 import doctorBg from '../../images/img/doctors-bg.jpg';
 
@@ -18,21 +23,55 @@ const Service = () => {
     marginTop: 200,
     marginBottom: 100
   }
+  const services = [
+    {
+      title: "Orthodontie",
+      description: "Alignement du sourire: Traitement des malocclusions dentaires pour enfants, adolescents et adultes.",
+      image: img1, // Assuming the 'img' constant holds the image URL
+    },
+    {
+      title: "Endodontie",
+      description: "Dents sauvées: Traitement des infections des canaux radiculaires",
+      image: img2,
+    },
+    {
+      title: "Parodontie",
+      description: "Gencives saines: Prise en charge des maladies des gencives, de la gingivite à la parodontite.",
+      image: img3,
+    },
+    {
+      title: "Implantologie",
+      description: "Remplacement durable: Remplacement des dents manquantes par des implants dentaires.",
+      image: img,
+    },
+    {
+      title: "Chirurgie orale et maxillo-faciale",
+      description: "Interventions chirurgicales: Traitement des pathologies de la bouche, des mâchoires et de la face.",
+      image: img4,
+    },
+    {
+      title: "Dentisterie esthétique",
+      description: "Souriez avec confiance: Solutions pour améliorer l'apparence de votre sourire (blanchiment, facettes, etc.).",
+      image: img5,
+    },
+    
+    // ... add more service objects here if you want hihi
+  ];
   return (
     <>
       <Header />
-      <SubHeader title="Service" subtitle="Lorem ipsum dolor sit amet consectetur adipisicing." />
+      <SubHeader title="Service" subtitle="Des solutions personnalisées pour répondre à vos besoins." />
 
       <div className="container" style={{ marginTop: 200, marginBottom: 100 }}>
         <div className="row">
           {
-            Array(6).fill(null).map((_item, id) => (
-              <div className="col-lg-4 col-md-6 col-sm-6" key={id + 6}>
+            services.map((service, index) => (
+              <div className="col-lg-4 col-md-6 col-sm-6" key={index}>
                 <div className="card shadow border-0 mb-5">
-                  <img src={img} alt="" className="img-fluid" style={{ maxHeight: '17rem', objectFit: 'cover' }} />
+                  <img src={service.image} alt="" className="img-fluid" style={{ maxHeight: '17rem', objectFit: 'cover' }} />
                   <div className="p-2">
-                    <h4 className="mt-4 mb-2">Garde d'enfants</h4>
-                    <p className="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+                    <h4 className="mt-4 mb-2">{service.title}</h4>
+                    <p className="mb-4">{service.description}</p>
                   </div>
                 </div>
               </div>
@@ -53,8 +92,7 @@ const Service = () => {
               <div className="d-flex align-items-center">
                 <div className='mb-4 section-title text-center'>
                   <h2 className='text-uppercase'>Nous sommes heureux de vous offrir le</h2>
-                  <p className='form-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sed.</p>
-                  <Link to={'/doctors'} className="btn-get-started scrollto">Commencer</Link>
+                  <p className='form-text'>service dont vous avez besoin</p>
                 </div>
 
               </div>
