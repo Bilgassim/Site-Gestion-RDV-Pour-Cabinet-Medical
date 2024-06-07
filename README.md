@@ -19,7 +19,14 @@ Ce projet vise à faciliter la gestion des rendez-vous pour les cabinets médica
 
 # **Captures d'écran :**
 
-![Uploading 1.png…]()
+
+![3](https://github.com/Bilgassim/Site-Gestion-RDV-Pour-Cabinet-Medical/assets/115211490/bd931f55-7a70-4301-b768-54b256d49bd3)
+![4](https://github.com/Bilgassim/Site-Gestion-RDV-Pour-Cabinet-Medical/assets/115211490/886fe77f-5c7a-41b3-b259-e448c99d4009)
+![5](https://github.com/Bilgassim/Site-Gestion-RDV-Pour-Cabinet-Medical/assets/115211490/27c24cd7-0680-4b37-909d-98e405691c50)
+![6](https://github.com/Bilgassim/Site-Gestion-RDV-Pour-Cabinet-Medical/assets/115211490/6b1c7080-401b-4be3-8518-7978dcc44831)
+![7](https://github.com/Bilgassim/Site-Gestion-RDV-Pour-Cabinet-Medical/assets/115211490/57d69da7-609c-418f-b88c-d43b1961274e)
+![8](https://github.com/Bilgassim/Site-Gestion-RDV-Pour-Cabinet-Medical/assets/115211490/20913698-d62c-4029-b4a4-eee263aa6f59)
+![2](https://github.com/Bilgassim/Site-Gestion-RDV-Pour-Cabinet-Medical/assets/115211490/0a9a45fd-4888-402e-95af-2b0471dc374e)
 
 # **Technologies utilisées :**
 
