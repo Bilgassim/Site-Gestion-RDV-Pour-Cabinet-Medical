@@ -52,7 +52,7 @@ Ce projet vise à faciliter la gestion des rendez-vous pour les cabinets médica
     * (Ajouter d'autres fonctionnalités que vous envisagez)
 
 # **Comment contribuer :**
-Vous pouvez contribuer en me contactant sur cet compte email : boulkassoum2002@gmail.com
+Vous pouvez contribuer en me contactant sur ce compte email : boulkassoum2002@gmail.com
 
 **Licence :**
 
